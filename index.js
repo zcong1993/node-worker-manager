@@ -27,10 +27,6 @@ class WorkerManager extends EventEmitter {
     this._id = 1
     this._workers = new Map()
 
-    if (nums > cpus()) {
-      console.warn(`worker nums: ${nums} > cpu numbers: ${cpus()}`)
-    }
-
     Array(nums)
       .fill(null)
       .forEach(() => this._createWorker())

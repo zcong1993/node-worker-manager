@@ -1,0 +1,45 @@
+{
+  "name": "@zcong/node-worker",
+  "version": "0.0.0",
+  "description": "node worker manager",
+  "repository": {
+    "url": "zcong1993/node-worker",
+    "type": "git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "utils.js"
+  ],
+  "scripts": {
+    "test": "npm run lint && echo 'no tests!'",
+    "lint": "xo",
+    "format": "prettier --write **/*.{js,json,md}"
+  },
+  "author": "zcong1993 <1005997919@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "semver": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.4",
+    "@zcong/eslint-config-custom": "^0.1.1",
+    "prettier": "^1.13.5",
+    "xo": "^0.18.0"
+  },
+  "typings": "index.d.ts",
+  "xo": {
+    "extends": [
+      "@zcong/eslint-config-custom"
+    ],
+    "envs": [
+      "jest",
+      "browser"
+    ],
+    "rules": {
+      "import/no-unresolved": 0,
+      "unicorn/no-process-exit": 0
+    }
+  }
+}

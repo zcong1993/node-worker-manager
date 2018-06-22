@@ -8,10 +8,10 @@ export interface Opts {
   workerOpts?: object
 }
 
-declare class WorkerManager extends EventEmitter {
+export class WorkerManager extends EventEmitter {
   workerNums: number
   constructor(opts: Opts)
   dispatch(msg: any)
 }
 
-export = WorkerManager
+export default WorkerManager

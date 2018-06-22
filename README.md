@@ -38,6 +38,8 @@ setInterval(() => {
 }, 1000)
 ```
 
+then run with command `node --experimental-worker index.js`
+
 ## Contributing
 
 1.  Fork it!

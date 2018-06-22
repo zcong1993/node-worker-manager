@@ -1,6 +1,6 @@
 {
   "name": "@zcong/node-worker-manager",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "simple node worker manager",
   "repository": {
     "url": "zcong1993/node-worker-manager",

@@ -1,4 +1,3 @@
-const { cpus } = require('os')
 const { EventEmitter } = require('events')
 const { Worker } = require('worker_threads')
 const debug = require('debug')('node-worker')

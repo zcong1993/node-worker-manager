@@ -1,9 +1,9 @@
 {
-  "name": "@zcong/node-worker",
+  "name": "@zcong/node-worker-manager",
   "version": "0.0.0",
-  "description": "node worker manager",
+  "description": "simple node worker manager",
   "repository": {
-    "url": "zcong1993/node-worker",
+    "url": "zcong1993/node-worker-manager",
     "type": "git"
   },
   "main": "index.js",

@@ -14,7 +14,9 @@
   "scripts": {
     "test": "npm run lint && echo 'no tests!'",
     "lint": "xo",
-    "format": "prettier --write **/*.{js,json,md}"
+    "format": "prettier --write **/*.{js,json,md}",
+    "example": "node --experimental-worker ./example/index.js",
+    "example:debug": "DEBUG=node-worker node --experimental-worker ./example/index.js"
   },
   "author": "zcong1993 <1005997919@qq.com>",
   "license": "MIT",

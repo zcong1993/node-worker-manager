@@ -8,14 +8,35 @@
 $ yarn add @zcong/node-worker-manager
 ```
 
-<!-- ## Usage
+## Usage
+
+> quickly start with `yarn example` or `yarn example:debug`
 
 ```js
-const nodeWorker = require('node-worker-manager')
+// worker.js
+const { parentPort } = require('worker_threads')
 
-nodeWorker()
-//=> foo
-``` -->
+parentPort.on('message', msg => {
+  // do something
+  console.log(msg)
+})
+```
+
+```js
+// main thread
+const path = require('path')
+const WorkerManager = require('@zcong/node-worker-manager')
+
+const wm = new WorkerManager({
+  workerPath: path.resolve(__dirname, './worker.js'),
+  recreate: true,
+  nums: 2
+})
+
+setInterval(() => {
+  wm.dispatch('test worker')
+}, 1000)
+```
 
 ## Contributing
 
